@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;;
+}
+
+.container{
+    display: inline-flex;
+}
+
+
+#map,
+#locations,
+#plansza {
+    border: 0px solid #333;
+    background-color: #fff;
+    padding: 0px;
+    margin: 10px;
+}
+
+#local1,
+#local2 {
+    border: 2px solid #333;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+#local2 {
+    margin-top: 10px; /* Dodanie odstępu między #local1 a #local2 */
+}
+
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+button:hover {
+    background-color: #3b883f; /* Darker green on hover */
+}
+
+#puzzle-container {
+    width: 512px;
+    height: 512px;
+    margin: 0px auto;
+    background-color: #ccc;
+    border: 0px solid #333;
+    padding: 0px;
+    overflow: hidden;
+}
+.puzzle-piece {
+    color: #050202;
+    box-sizing: border-box;
+}
+
+#nothing{
+    width: 512px;
+    height: 512px;
+    display: none;
+}

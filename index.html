@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://unpkg.com/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
+</head>
+<body>
+    <div id="nothing"></div>
+    <div class="container">
+        <!--<div id="map" style="width: 512px; height: 512px;"></div>-->
+        <div id="map" style="width: 512px; height: 512px;"></div>
+
+        <div class="locations">
+            <p id="local1">Unknown</p>
+            <p id="local2">Unknown</p>
+        </div>
+        <div class="game">
+            <canvas id="plansza" width="512" height="512"></canvas>
+        </div>
+        
+    </div>
+    <div class="buttons">
+        <button id="getLocationAgree">Zgoda na lokalizację</button>
+        <button id="notificationsAgree">Zgoda na powiadomienia</button>
+        <button id="getLocation">Pobierz lokalizację</button>
+        <button id="getMap">Pobierz mapę</button>
+        <button id="shuffle">Przemieszaj</button>
+        <button id="reset">Resetuj układankę</button>
+    </div>
+    <div id="puzzle-container"></div>
+
+    <!-- Add this script tag to include Leaflet from CDN -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Your existing script tag -->
+    <script src="./script.js"></script>
+</body>
+</html>
